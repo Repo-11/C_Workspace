@@ -102,10 +102,11 @@ void infixToPostfix(char *infix, char *postfix)
 
 int main()
 {
-    char infix[SIZE] = "K+L-M*N+(O^P)*W/U/V*T+Q";
-    char *postfix = (char *)malloc(sizeof(char) * SIZE);
+    char infix[SIZE], postfix[SIZE];
+    printf("Enter an expression :\n");
+    gets(infix);
     infixToPostfix(infix, postfix);
     printf("\nPostfix expression : ");
-    printf("%s\n\n", postfix);
+    printf("%s\n", postfix);
     return 0;
 }

@@ -7,7 +7,7 @@ struct complex{
 };
 
 void addComplex(struct complex str1, struct complex str2){
-    printf("Addition of complex numbers is : %.3lf i%.3lf", str1.real+str2.real, str2.img+str2.img);
+    printf("Addition of complex numbers is : %.3lf i%.3lf", str1.real+str2.real, str1.img+str2.img);
 }
 
 void prodComplex(struct complex str1, struct complex str2){
